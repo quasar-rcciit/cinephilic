@@ -5,23 +5,22 @@
 
 header {
     h3 {
-        font-size: 28px;
-        font-weight: 300;
-    }
-    span {
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 300;
     }
 }
 
 .movie--title {
     text-align: center;
-    margin-bottom: 1em;
+    font-size: 20px;
 }
 
-.movie--description {
-    font-size: 16px;
+.movie--release-date {
+    font-size: 18px;
     font-weight: 300;
-    color: #333;
-    margin-bottom: 0.6em;
+}
+
+.movie--popularity {
+    font-size: 18px;
+    font-weight: 500;
 }

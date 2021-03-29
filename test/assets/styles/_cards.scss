@@ -4,22 +4,50 @@
     position: relative;
 
     .each-card {
-        position: relative;
-        width: auto;
+        width: 100%;
         background: #f4f4f4;
-        padding: 1.2em;
-        margin: 3em 0;
+        overflow: hidden;
+        position: relative;
+        margin: 2em 0;
+        padding: 1em;
         border: 2px solid rgba($color: #000000, $alpha: 0.06);
         border-radius: 12px;
-        box-shadow: 3px 6px 20px 1px rgba($color: #000000, $alpha: 0.2);
-        overflow: hidden;
+        transition: all 300ms ease;
+        box-shadow: 3px 7px 20px 1px rgba($color: #000000, $alpha: 0.2);
 
         .movie--poster {
-            position: relative;
+            border-radius: 6px;
+        }
+
+        .head {
             width: 100%;
-            height: 52%;
-            object-fit: cover;
-            border-radius: 8px;
+            margin: auto;
+        }
+        .bottom {
+            width: 100%;
+            margin: auto;
+            height: 30%;
+            position: absolute;
+            color: white;
+            opacity: 0;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            transition: all 300ms ease;
+        }
+        &:hover {
+            transform: scale(1.023);
+
+            .bottom {
+                opacity: 1;
+            }
+            .movie--poster {
+                filter: brightness(60%);
+            }
         }
     }
 }

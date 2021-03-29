@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Cinephilic",
+    "description": "Browse through your favourite movies",
+    "version": "1.0",
+    "author": "danger-ahead",
+    "icons": { "512": "./assets/icon.png" },
+    "browser_action": {
+        "default_icon": "./assets/tab-icon.png",
+        "default_title": "Get infected with cinephilia",
+        "default_popup": "index.html"
+    },
+    "permissions": ["activeTab"]
+}

@@ -1,0 +1,22 @@
+header {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+
+    .logo {
+        position: relative;
+        object-fit: cover;
+        width: 40px;
+    }
+    h3 {
+        display: inline-block;
+        margin-left: 1em;
+    }
+    span {
+        display: inline;
+        padding-left: 0.6em;
+    }
+}

@@ -1,7 +1,16 @@
-{ "manifest_version": 2, "name": "cinephilic", "description": "Browse through your favourite movies", "version": "1", "author": "danger-ahead",
+{
+    "manifest_version": 2,
+    "name": "cinephilic",
+    "description": "Browse through your favourite movies",
+    "version": "1",
+    "author": "danger-ahead",
 
-"browser_action": {   "default_icon": "tab-icon.png",   "default_title": "Get infected with cinephilia" },
-    
-"chrome_url_overrides" : {  "newtab": "newtab.html"},
-    
-"permissions":["activeTab"]}
+    "browser_action": {
+        "default_icon": "tab-icon.png",
+        "default_title": "Get infected with cinephilia"
+    },
+
+    "chrome_url_overrides": { "newtab": "newtab.html" },
+
+    "permissions": ["activeTab"]
+}

@@ -5,7 +5,7 @@
 ## Installing this extension:
 
 ### 1. Visit https://www.themoviedb.org/ and sign up.
-### 2. After loggin in, go to https://www.themoviedb.org/settings/api.
+### 2. After logging in, go to https://www.themoviedb.org/settings/api.
 ### 3. Click on generate API key and follow the steps.
 ### 4. Paste the API key in the **Api.js** located in the **src** folder.
 ### 5. On your chromium based browser, visit **chrome://extensions**.

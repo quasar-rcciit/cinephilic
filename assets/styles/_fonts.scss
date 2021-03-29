@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    h3 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+    span {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.movie--title {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.movie--description {
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 0.6em;
+}

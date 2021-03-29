@@ -1,53 +1,31 @@
 .inner-card {
-    width: 90%;
-    margin: auto;
-    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em 0;
 
     .each-card {
-        width: 100%;
-        background: #f4f4f4;
-        overflow: hidden;
-        position: relative;
-        margin: 2em 0;
-        padding: 1em;
+        width: 90%;
+        margin: auto;
+        background-color: #f4f4f4;
+        padding: 0.6em;
         border: 2px solid rgba($color: #000000, $alpha: 0.06);
         border-radius: 12px;
-        transition: all 300ms ease;
-        box-shadow: 3px 7px 20px 1px rgba($color: #000000, $alpha: 0.2);
+        box-shadow: 3px 6px 20px 1px rgba($color: #000000, $alpha: 0.2);
+        transition: transform 300ms ease;
 
-        .movie--poster {
-            border-radius: 6px;
-        }
-
-        .head {
-            width: 100%;
-            margin: auto;
-        }
-        .bottom {
-            width: 100%;
-            margin: auto;
-            height: 30%;
-            position: absolute;
-            color: white;
-            opacity: 0;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -40%);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            transition: all 300ms ease;
-        }
         &:hover {
-            transform: scale(1.023);
-
-            .bottom {
-                opacity: 1;
-            }
+            transform: scale(1.0235);
             .movie--poster {
-                filter: brightness(60%);
+                filter: brightness(30%);
             }
         }
     }
+}
+
+.movie--poster {
+    width: 100%;
+    border-radius: 6px;
+    filter: brightness(70%);
+    overflow: hidden;
 }

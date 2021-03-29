@@ -1,4 +1,4 @@
-@import './fonts', './nav', './cards';
+@import './cards', './font', './nav';
 
 * {
     margin: 0;
@@ -7,9 +7,10 @@
 }
 
 body {
-    width: 100%;
+    width: 375px;
+    height: 100%;
 }
 
-.movie--poster {
-    width: 100%;
+.head {
+    position: relative;
 }

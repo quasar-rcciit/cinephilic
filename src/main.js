@@ -14,9 +14,11 @@ window.onload = async function fetchData() {
                 `<div class="each-card">
                     <img class="movie--poster" src="https://image.tmdb.org/t/p/w500${itr.backdrop_path}" draggable="true" / >
                     <h2 class="movie--title">${itr.original_title}</h2>
-                    <p class="movie--description">${itr.overview}</p>
-                    <p class="movie--release-date">Release date: ${itr.release_date}</p>
-                    <p class="movie--popularity">Popularity: +${itr.popularity}</p>
+                    <div class="movie--details">
+                      <p class="movie--description">${itr.overview}</p>
+                      <p class="movie--release-date">Release date: ${itr.release_date}</p>
+                      <p class="movie--popularity">Popularity: +${itr.popularity}</p>
+                    </div>
                 </div>
                 `
         )

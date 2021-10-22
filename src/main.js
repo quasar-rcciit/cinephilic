@@ -6,7 +6,6 @@ window.onload = async function fetchData() {
     const req = await fetch(Api);
     res = await req.json();
     const data = res.results;
-    console.log(data);
 
     Dom.innerHTML = `<div class="inner-card">${data
         .map(
@@ -17,7 +16,7 @@ window.onload = async function fetchData() {
                     <div class="movie--details">
                       <p class="movie--description">${itr.overview}</p>
                       <p class="movie--release-date">Release date: ${itr.release_date}</p>
-                      <p class="movie--popularity">Popularity: +${itr.popularity}</p>
+                      <p class="movie--popularity">Rating: ${itr.vote_average}</p>
                     </div>
                 </div>
                 `

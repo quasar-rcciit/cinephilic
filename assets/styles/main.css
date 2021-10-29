@@ -74,6 +74,22 @@ header span {
   background-color: #7bafc4;
 }
 
+.search_btn {
+  background-color: yellowgreen;
+  border: 2px solid #475d66;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: rgb(20, 20, 20);
+}
+
+.search_btn:active {
+  outline: none;
+  background-color: green;
+  color: white;
+}
+
 .inner-card {
   width: 90%;
   margin: auto;

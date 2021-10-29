@@ -1,9 +1,11 @@
-import Api from './Api.js';
+import { api } from './Api.js';
 import Dom from './Dom.js';
+import { key } from './Api.js';
 
 let res;
 window.onload = async function fetchData() {
-    const req = await fetch(Api);
+    document.getElementById("search_btn").addEventListener("click", search);
+    const req = await fetch(api);
     res = await req.json();
     const data = res.results;
 
@@ -23,3 +25,9 @@ window.onload = async function fetchData() {
         )
         .join('')}</div>`;
 };
+
+function search() {
+    var input = document.getElementById("search").value;
+    window.open(`https://api.themoviedb.org/3/search/movie?api_key=${key}&query=${input}`,
+        "TMDB", "menubar=1,resizable=0,width=500,height=500");
+}

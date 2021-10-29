@@ -38,6 +38,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-content: space-between;
 }
 
 header .logo {
@@ -55,6 +56,22 @@ header h3 {
 header span {
   display: inline;
   padding-left: 0.6em;
+}
+
+/*Search Bar*/ 
+.search {
+  background-color: transparent;
+  border: 2px solid #475d66;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: rgb(20, 20, 20);
+}
+
+.search:focus {
+  outline: none;
+  background-color: #7bafc4;
 }
 
 .inner-card {

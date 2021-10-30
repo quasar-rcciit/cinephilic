@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header h3 {
@@ -24,6 +24,36 @@ header span {
   color: #333;
   margin-bottom: 0.6em;
 }
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  /* display: none; */
+  display: none;
+}
+.searchcard {
+  margin: 10% auto;
+  width: 400px;
+  height: 550px;
+  /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17); */
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+  position: relative;
+  /* width: 50%; */
+  background: #f4f4f4;
+  padding: 1.2em;
+
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  -webkit-box-shadow: 3px 6px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 6px 20px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
 header {
   width: 90%;
@@ -33,18 +63,18 @@ header {
   display: flex;
   margin: auto;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   justify-content: space-between;
 }
 
 header .logo {
   position: relative;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 40px;
 }
 
@@ -58,7 +88,7 @@ header span {
   padding-left: 0.6em;
 }
 
-/*Search Bar*/ 
+/*Search Bar*/
 .search {
   background-color: transparent;
   border: 2px solid #475d66;
@@ -95,10 +125,9 @@ header span {
   margin: auto;
   position: relative;
   display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 0.5fr));
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 0.5fr));
 }
-
 
 .inner-card .each-card {
   position: relative;
@@ -109,19 +138,17 @@ header span {
   border: 2px solid rgba(0, 0, 0, 0.06);
   border-radius: 12px;
   -webkit-box-shadow: 3px 6px 20px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 6px 20px 1px rgba(0, 0, 0, 0.2);
-  overflow:hidden;
+  box-shadow: 3px 6px 20px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   /* height: 800px; */
-  
 }
-
 
 .inner-card .each-card .movie--poster {
   position: relative;
   width: 100%;
   height: 52%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -129,28 +156,39 @@ header span {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
 }
-.movie--details{
-  
+.movie--details {
   overflow-y: scroll;
-  height:30%;
-  scrollbar-width:10px;
-  scrollbar-color:  black #f4f4f4;
-  
+  height: 30%;
+  scrollbar-width: 10px;
+  scrollbar-color: black #f4f4f4;
 }
-.movie--details::-webkit-scrollbar{
+.movie--details::-webkit-scrollbar {
   width: 10px;
 }
-.movie--details::-webkit-scrollbar-thumb{
- background-color: black;  
+.movie--details::-webkit-scrollbar-thumb {
+  background-color: black;
 }
 /*# sourceMappingURL=main.css.map */
-.movie--details::-webkit-scrollbar-track{
-  background-color: #f4f4f4;;
+.movie--details::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
 }
- 
+.auto {
+  margin: 10% auto;
+}
+.searchcard .closebtn {
+  position: absolute;
+  right: 28px;
+  top: 21px;
+  cursor: pointer;
+}
+.searchcard img {
+  width: 350px;
+  height: 250px;
+  border-radius: 7px;
+}

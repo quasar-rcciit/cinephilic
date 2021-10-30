@@ -7,7 +7,13 @@
         <title>New Tab</title>
         <script src="./src/main.js" type="module"></script>
         <link rel="stylesheet" href="./assets/styles/main.css" />
-    </head>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <body>
         <header>
             <div>
@@ -20,6 +26,19 @@
                 <input type="button" id="search_btn"" class="search_btn" value="Search"/>
             </form>
         </header>
+        <div class="modal">
+            <!-- <div class="searchcard">
+                <span class="closebtn">
+                   <i class="fas fa-times fa-2x"></i>
+                </span>
+                <h2 class="movie--title">${itr.original_title}</h2>
+                <div class="movie--details">
+                  <p class="movie--description">${itr.overview}</p>
+                  <p class="movie--release-date">Release date: ${itr.release_date}</p>
+                  <p class="movie--popularity">Rating: ${itr.vote_average}</p>
+                </div>    
+            </div> -->
+        </div>
         <div class="card"></div>
     </body>
 </html>
